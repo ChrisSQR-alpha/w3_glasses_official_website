@@ -46,7 +46,8 @@
   .nav ul{
     display: flex;
     justify-content: space-between;
-    width: 37.96%;
+    width: 492px;
+    /* width: 37.96%; */
     padding: 25px 0;
   }
   .nav ul a{
