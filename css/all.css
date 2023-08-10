@@ -46,7 +46,7 @@
   .nav ul{
     display: flex;
     justify-content: space-between;
-    width: 492px;
+    width: 37.96%;
     padding: 25px 0;
   }
   .nav ul a{
@@ -474,12 +474,6 @@
     margin-bottom: 8px;
   }
   
-  /* form{
-    background: green;
-  } */
-  /*form p{
-    background: pink;
-  } */
   form p,
   form input,
   form textarea,
@@ -499,17 +493,14 @@
     resize: none;
   }
   .name{
-  /*   height: 36px; */
     padding-top: 5px;
     padding-bottom: 5px;
   }
   .phone, .email{
-  /*   height: 33px; */
     padding-top: 3.5px;
     padding-bottom: 3.5px;
   }
   .suggest{
-  /*   height:136px; */
     padding-top: 7px;
     padding-bottom: 7px;
     overflow-y: hidden;
@@ -567,17 +558,7 @@
       background-color: #AA0601;
       border-color: #AA0601;
       color: white;
-  }
-  
-  /* input[type="checkbox"]+label{
-    display: block;
-    padding-left: 29px;
-    text-indent: -25px;
-  } */
-  /* input[type="checkbox"]+label::before{
-    text-indent: 0px;
-  } */
-  
+  }  
   
   @media(max-width: 768px){
     .contact-us h2{
@@ -593,7 +574,6 @@
     }
     form button[type="submit"]{
       width: 58.33%;
-  /*     background: blue; */
     }
   }
   
@@ -601,7 +581,6 @@
     .contact-us{
       padding-top: 40px;
       padding-bottom: 40px;
-  /*     background: #336699; */
     }
     .contact-us h2{
       font-size: 24px;
@@ -693,12 +672,12 @@
   .mb-8{
     margin-bottom: 8px;
   }
-  .footer-term ul li small{
+  .footer-term small{
     color: #ffffff;
     font-size: 16px;
     line-height: 1.5;
   }
-  .footer-term ul li a{
+  .footer-term li a{
     font-size: 14px;
     line-height: 1.5;
   }
@@ -737,7 +716,6 @@
   @media(max-width: 375px){
     .footer-nav{
       display: none;
-  /*     visibility: hidden; */
       height: 0px;
     }
     .d-flex-sm{
@@ -750,7 +728,6 @@
       border-bottom: 1px solid #ffffff;
     }
     .footer-link{
-  /*     background: #000000; */
       align-self: start;
     }
     
@@ -764,12 +741,7 @@
     .footer-link{
       padding-top: 24px;
     }
-    .footer-contact{
-  /*     background: silver; */
-    }
-    
     .footer-info{
-  /*     background: pink; */
       border-bottom: none;
     }
     .mail,
@@ -777,7 +749,6 @@
       width: 24px;
       height: 24px;
       padding-top: 4px;
-  /*     background: green; */
     }
     .mr-sm-11{
       margin-right: 11px;
