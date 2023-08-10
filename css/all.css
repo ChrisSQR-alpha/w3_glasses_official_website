@@ -1,0 +1,820 @@
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  
+  /* 全域設定 */
+  *, *::before, *::after{
+    box-sizing: border-box;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  body{
+    font-family: 'Noto Sans TC', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  /*  nav樣式*/
+  .nav-container{
+    background: #AA0601;
+  }
+  .nav{
+    max-width: 1296px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav h1{
+    width: 80px;
+  }
+  .nav h1 a{
+    display: block;
+  }
+  
+  .nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 492px;
+    padding: 25px 0;
+  }
+  .nav ul a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  
+  @media(max-width: 768px){
+    .ml-md-36{
+      margin-left: 36px;
+    }
+    .mr-md-36{
+      margin-right: 36px;
+    }
+  
+  }
+  @media(max-width: 375px){
+    .nav{
+      flex-direction: column;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .nav h1{
+      align-self: start;
+      margin: 15px 0px 15.43px 16px;
+    }
+    .nav ul{
+      width: 100%;
+      padding: 0;
+    }
+    .nav ul li{
+      border: 1px solid #ffffff;
+      text-align: center;
+      width:50%;
+    }
+  
+    .mr-sm-0{
+      margin-right: 0px;
+    }
+  }
+  
+  /* header 樣式  */
+  
+  .header-container{
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true) no-repeat right center/cover;
+  }
+  .header{
+    max-width: 1296px;
+    margin: 0 auto;
+    text-align: right;
+    color: #650300;
+  }
+  .pt-296{
+    padding-top: 296px;
+  }
+  .pb-296{
+    padding-bottom: 296px;
+  }
+  .header-h2{
+    font-size: 64px;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+  .mb-4{
+    margin-bottom: 4px;
+  }
+  .header-p{
+    font-size: 36px;
+    line-height: 1.5;
+  }
+  .shopping-button{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #ffffff;
+    display: inline-block;
+  }
+  
+  .shopping-button a{
+    color: #ffffff;
+    display: block;
+    padding: 6px 12px;
+    background: #AA0601;
+  }
+  .shopping-button a:hover{
+    opacity: 0.5;  
+  }
+  .shopping-button a:active{
+    background: #650300;
+    opacity: 1; 
+  }
+  @media(max-width:768px){
+    .pr-md-37{
+      padding-right: 37px;
+    }
+  }
+  @media(max-width:375px){
+    .header-container-sm{
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true) no-repeat right center/cover;
+  }
+    .pt-144-sm{
+      padding-top: 144px;
+    }
+    .pb-144-sm{
+      padding-bottom: 144px;
+    }
+    .pr-sm-14{
+      padding-right: 14px;
+    }
+    .header-p-sm{
+      font-size: 16px;
+    }
+    .header-h2-sm{
+      font-size: 24px;
+    }
+    .shopping-button-sm{
+      font-size: 20px;
+    }
+    
+  }
+  
+  /*  feature 樣式*/
+  .feature-container{
+    background: #FBF2F2;
+  }
+  .feature{
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+  .featuer ul{
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  
+  .feature-icon{
+    max-width: 100px;
+    margin: 0 auto;
+  }
+  .feature h3,
+  .feature h4{
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    color:#650300;
+  }
+  .feature h3{
+    font-size: 48px;
+  }
+  .feature h4{
+    font-size: 24px;
+  }
+  .feature p{
+    max-width: 306px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .pt-80{
+    padding-top: 80px;
+  }
+  .pb-80{
+    padding-bottom: 80px;
+  }
+  .mr-24{
+    margin-right: 24px;
+  }
+  @media(max-width: 768px){
+    .pr-md-36{
+      padding-right: 36px;
+    }
+    .pl-md-36{
+      padding-left: 36px;
+    }
+
+    .feature-md ul{
+      max-width: 696px;
+      justify-content: space-between;
+    }
+    .feature-md li{
+      width: 48.275862%;
+      /* margin: 0 auto; */
+    }
+    .feature-md p{
+      max-width: 336px;
+    }
+    .mr-md-0{
+        margin-right: 0px;
+    }
+
+  }
+  @media(max-width: 375px){
+    .feature h3{
+      font-size: 24px;
+    }
+     .feature-md li{
+      width: 100%;
+      margin: 0 auto;
+    }
+    .mb-sm-0{
+      margin-bottom: 0;
+    }
+    .pt-sm-40{
+      padding-top: 40px;
+    }
+    .pb-sm-40{
+      padding-bottom: 40px;
+    }
+  }
+  
+  /*  classic-series 樣式*/
+  .classic-series{
+    max-width: 1296px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 48px;
+  }
+  
+  .classic-series h3{
+    color: #650300;
+    font-weight: bold;
+  }
+  .classic-series h4{
+    color: #AA0601;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+  }
+  .classic-series ul{
+    justify-content: space-between;
+  }
+  .classic-series li{
+    width: 32.1%;
+  }
+  
+  
+  @media(max-width: 768px){
+  
+    .classic-series-md ul{
+      max-width: 336px;
+      flex-direction: column;
+      margin: 0 auto;
+    } 
+    .classic-series-md li{
+      width: 100%;
+    }
+    .mb-md-24{
+      margin-bottom: 24px;
+    }
+  }
+  @media(max-width: 375px){
+    .classic-series-sm ul{
+      max-width: 336px;
+    }
+    .classic-series-sm div{
+      width: 100%;
+    }
+    .classic-series-sm h3{
+      font-size: 24px;
+    }
+    
+  }
+  
+  /*  co-design 樣式*/
+  .co-design-container{
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true) no-repeat right center/cover;
+  }
+  .co-design{
+    max-width: 1296px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .co-design h3{
+    font-size: 48px;
+    color: #ffffff;
+  }
+  .co-design-img-sm{
+    display: none;
+  }
+  .co-design div{
+    max-width: 648px;
+  }
+  .co-design h4{
+    font-family: 'roboto', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 48px;
+    color: #AA0601;
+    background: #ffffff;
+  }
+  .pt-8{
+    padding-top: 8px;
+  }
+  .pb-8{
+    padding-bottom: 8px;
+  }
+  @media(max-width: 768px){
+    .co-design ul{
+      max-width: 696px;
+    }
+    .mb-md-24{
+      margin-bottom: 24px;
+    }
+  }
+  @media(max-width: 375px){
+    .co-design-sm h3{
+     font-size: 24px;
+    }
+    .co-design h3{
+    font-size: 24px;
+    }
+    .co-design-img{
+      display: none;
+    }
+    .co-design-img-sm{
+      display: block;
+    }
+  }
+  
+  /*  recommendation 樣式*/
+  .recommendation{
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+  .recommendation h3{
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    color:#AA0601;
+  }
+  .recommendation ul{
+    justify-content: space-between;
+  }
+  .recommendation li{
+    width: 23.61%;
+  }
+  .p-16{
+    padding: 16px;
+  }
+  
+  .h-120{
+    height: 120px;
+  }
+  .border-shadow{
+    border-radius: 0 0 4px 4px;
+    border: 1px solid #DEE2E6;
+    border-top: 0 ;
+    box-shadow: 0px 2px 6px #00000029;
+  }
+  .guest-name{
+    font-weight: 500;
+  }
+  .recommendation time{
+    font-size: 14px;
+    color:#707070
+  }
+
+  @media(max-width: 768px){
+    .recommendation ul{
+      max-width: 696px;
+    }
+    .recommendation li{
+      width: 48.27%;
+    }
+    .mb-md-16{
+      margin-bottom: 16px;
+    }
+    .pb-md-64{
+      padding-bottom: 64px;
+    }
+  }
+  @media(max-width: 375px){
+    .recommendation h3{
+      font-size: 24px;
+    }
+    .recommendation ul{
+      max-width: 375px;
+      justify-content: center;
+    }
+    .recommendation li{
+      width: 100%;
+    }
+    .pb-sm-24{
+      padding-bottom: 24px;
+    }
+  }
+  
+  
+  
+  /* contact-us 樣式 */
+  .contact-us-container{
+    background: #fbf2f2;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .contact-us{
+    max-width: 636px;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+  .contact-us h2{
+    color:#650300;
+    font-size: 48px;
+    font-weight: Bold;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .contact-us-text{
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  form div{
+    margin-bottom: 48px;
+  }
+  .mb-48{
+    margin-bottom: 48px;
+  }
+  .mb-24{
+    margin-bottom: 24px;
+  }
+  .mb-16{
+    margin-bottom: 16px;
+  }
+  .mb-8{
+    margin-bottom: 8px;
+  }
+  
+  /* form{
+    background: green;
+  } */
+  /*form p{
+    background: pink;
+  } */
+  form p,
+  form input,
+  form textarea,
+  form button,
+  ::placeholder{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  form input,
+  form textarea{
+    width: 100%;
+    border: 1px solid #000000;
+    background: #fbf2f2;
+    padding-left: 12px;
+    padding-right: 12px;
+    resize: none;
+  }
+  .name{
+  /*   height: 36px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .phone, .email{
+  /*   height: 33px; */
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
+  }
+  .suggest{
+  /*   height:136px; */
+    padding-top: 7px;
+    padding-bottom: 7px;
+    overflow-y: hidden;
+  }
+  
+  form button[type="submit"]{
+    display: block;
+    width: 65.41%;
+    margin: 0 auto;
+    border: none;
+    padding: 16px 0;
+    background: #AA0601;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /*設定 checkbox+label 位置和滑鼠觸及反應*/
+  input[type="checkbox"] + label{
+      padding-left: 4px;
+      cursor: pointer;
+  /*換行縮排的排版設定*/
+      display: block;
+      padding-left: 29px;
+      text-indent: -25px;
+  }
+  /*隱藏預設的 checkbox */
+  input[type="checkbox"]{
+    display: none;
+    
+  }
+  /*利用虛擬元素畫出我要的 checkbox */
+  input[type="checkbox"]+label::before{
+      /*打勾符號代碼*/
+      content:"\2713";
+      display: inline-block;
+      color: transparent;
+      border:1px solid #000;
+      border-radius: 16%;
+      width:16px;
+      height:16px;
+      margin-right: 8px;
+  /*  檢查位置*/
+  /*  text-decoration: underline; */
+      font-size: 16px;
+      line-height: 0.667; /*  用 line-height 來調整符號的縱向位置*/ /*預設lh=16*1.5=24 所以要修正1/1.5回去 */
+      text-indent: 1px; /*  校正 pseudoelement 縮排*/
+  }
+  
+  /*  檢查位置*/
+  /* .checkbox-label{
+      text-decoration: underline;
+  } */
+  /*在 id for 已掛勾的前提下，畫出 check 之後的樣子*/
+  input[type="checkbox"]:checked+label::before{
+      background-color: #AA0601;
+      border-color: #AA0601;
+      color: white;
+  }
+  
+  /* input[type="checkbox"]+label{
+    display: block;
+    padding-left: 29px;
+    text-indent: -25px;
+  } */
+  /* input[type="checkbox"]+label::before{
+    text-indent: 0px;
+  } */
+  
+  
+  @media(max-width: 768px){
+    .contact-us h2{
+      margin-bottom: 24px;
+    }
+    input[type="checkbox"]+label::before{
+      /*  iPhone XR*/
+      /*  用 PC 看的話下面的修正可以不要*/
+     font-size: 12px;
+     padding-top: 2px;
+     vertical-align: 2px;
+     text-indent: 3px;
+    }
+    form button[type="submit"]{
+      width: 58.33%;
+  /*     background: blue; */
+    }
+  }
+  
+  @media(max-width: 375px){
+    .contact-us{
+      padding-top: 40px;
+      padding-bottom: 40px;
+  /*     background: #336699; */
+    }
+    .contact-us h2{
+      font-size: 24px;
+    }
+    form button[type="submit"]{
+      width: 100%;
+    }
+  }
+  
+  
+  /*  footer 樣式*/
+  .footer-container{
+    background: #AA0601;
+  }
+  .footer-container a{
+    color: #ffffff;
+  }
+  .footer{
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+  .footer small{
+    font-family: 'roboto', san-serif;
+  }
+  .d-flex{
+    display: flex;
+  }
+  .footer-link,
+  .footer-nav,
+  .footer-contact{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-nav{
+    font-size: 16px;
+    line-height: 1.5;
+  /*   width: 35.8%; */
+  }
+  .mr-36{
+    margin-right: 36px;
+  }
+  .social-icon{
+    width: 48px;
+  }
+  .mr-32{
+    margin-right: 32px;
+  }
+  .pt-48{
+    padding-top: 48px;
+  }
+  .footer-info{
+    border-bottom: 1px solid #ffffff;
+  }
+  .info-text{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 1.5;
+    vertical-align: middle;
+  }
+  .material-symbols-outlined.md-36{
+    font-size: 36px;
+  }
+  .material-symbols-outlined.md-40{
+    font-size: 40px;
+  }
+  
+  .mr-16{
+    margin-right: 16px;
+  }
+  
+  .mail,
+  .phone-number{
+    width: 48px;
+    height: 48px;
+    color: #ffffff;
+    padding-top:9px;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  
+  .pt-24{
+    padding-top: 24px;
+  }
+  .pb-32{
+    padding-bottom: 32px;
+  }
+  .mb-8{
+    margin-bottom: 8px;
+  }
+  .footer-term ul li small{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .footer-term ul li a{
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .footer-term ul{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mr-48{
+    margin-right: 48px;
+  }
+  .pt-32{
+    padding-top: 32px;
+  }
+  
+  @media(max-width:768px){
+    .pl-md-40{
+      padding-left: 40px;
+    }
+    .pr-md-40{
+      padding-right: 40px;
+    }
+    .social-icon-md{
+      width: 40px;
+    }
+    .mr-md-16{
+      margin-right: 16px;
+    }
+    .pb-md-40{
+      padding-bottom: 40px;
+    }
+  
+    .flex-wrap{
+      flex-wrap: wrap;
+    }
+  }
+  @media(max-width: 375px){
+    .footer-nav{
+      display: none;
+  /*     visibility: hidden; */
+      height: 0px;
+    }
+    .d-flex-sm{
+      display: flex;
+  
+    }
+    .footer-link-info-container{
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      border-bottom: 1px solid #ffffff;
+    }
+    .footer-link{
+  /*     background: #000000; */
+      align-self: start;
+    }
+    
+    .social-icon-sm{
+      width: 24px;
+      height: 24px;
+    }
+    .mr-sm-8{
+      margin-right: 8px;
+    }
+    .footer-link{
+      padding-top: 24px;
+    }
+    .footer-contact{
+  /*     background: silver; */
+    }
+    
+    .footer-info{
+  /*     background: pink; */
+      border-bottom: none;
+    }
+    .mail,
+    .phone-number{
+      width: 24px;
+      height: 24px;
+      padding-top: 4px;
+  /*     background: green; */
+    }
+    .mr-sm-11{
+      margin-right: 11px;
+    }
+    .footer-info span{
+      font-size: 16px;
+    }
+    .material-symbols-outlined.md-18{
+      font-size: 18px;
+    }
+    .pl-sm-13{
+      padding-left: 13px;
+    }
+    .pl-sm-13{
+      padding-right: 13px;
+    }
+    .pb-sm-24{
+      padding-bottom: 24px;
+    }
+    .flex-column-sm{
+      flex-direction: column;
+      align-items: flex-start;  }
+    .mr-sm-0{
+      margin-right: 0px;
+    }
+   
+    .footer-term ul{
+      align-items: flex-start;
+    }
+    
+    .pt-sm-16{
+      padding-top: 16px;
+    }
+    .pb-sm-24{
+      padding-bottom: 24px;
+    }
+    .sm-word-spacing{
+      letter-spacing: 0px;
+    }
+  }
