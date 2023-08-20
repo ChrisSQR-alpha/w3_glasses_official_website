@@ -18,7 +18,7 @@
   }
   body{
     font-family: 'Noto Sans TC', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     overflow-y: scroll;
   }
   a{
@@ -47,10 +47,10 @@
     display: flex;
     justify-content: space-between;
     width: 492px;
-    /* width: 37.96%; */
-    padding: 25px 0;
   }
   .nav ul a{
+    display: block;
+    padding: 25px 0;
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
@@ -67,7 +67,7 @@
     }
   
   }
-  @media(max-width: 375px){
+  @media(max-width: 648px){
     .nav{
       flex-direction: column;
       padding-left: 0px;
@@ -95,20 +95,19 @@
   /* header 樣式  */
   
   .header-container{
-    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true) no-repeat right center/cover;
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true) no-repeat center/cover;
   }
   .header{
     max-width: 1296px;
+    height: 787px;
     margin: 0 auto;
     text-align: right;
+    display: flex;
+    justify-content: end;
+    align-items: center;
     color: #650300;
   }
-  .pt-296{
-    padding-top: 296px;
-  }
-  .pb-296{
-    padding-bottom: 296px;
-  }
+
   .header-h2{
     font-size: 64px;
     line-height: 1.5;
@@ -146,10 +145,13 @@
       padding-right: 37px;
     }
   }
-  @media(max-width:375px){
+  @media(max-width:648px){
     .header-container-sm{
-    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true) no-repeat right center/cover;
-  }
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true) no-repeat center/cover;
+    }
+    .header{
+      height: 396px;
+    }
     .pt-144-sm{
       padding-top: 144px;
     }
@@ -240,7 +242,7 @@
     }
 
   }
-  @media(max-width: 375px){
+  @media(max-width: 648px){
     .feature h3{
       font-size: 24px;
     }
@@ -275,6 +277,7 @@
     color: #AA0601;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
+    text-overflow: ellipsis;
   }
   .classic-series ul{
     justify-content: space-between;
@@ -283,19 +286,24 @@
     width: 32.1%;
   }
   
-  
-  @media(max-width: 768px){
-  
+  /* 提前變版，避免溢位 */
+  @media(max-width: 900px){
     .classic-series-md ul{
       max-width: 336px;
       flex-direction: column;
+      align-items: center;
       margin: 0 auto;
-    } 
+    }
     .classic-series-md li{
       width: 100%;
     }
     .mb-md-24{
       margin-bottom: 24px;
+    }
+  }
+  @media(max-width: 648px){
+    .classic-series h3{
+      font-size: 24px;
     }
   }
   @media(max-width: 375px){
@@ -352,7 +360,7 @@
       margin-bottom: 24px;
     }
   }
-  @media(max-width: 375px){
+  @media(max-width: 648px){
     .co-design-sm h3{
      font-size: 24px;
     }
@@ -419,10 +427,12 @@
       padding-bottom: 64px;
     }
   }
-  @media(max-width: 375px){
+  @media(max-width: 648px){
     .recommendation h3{
       font-size: 24px;
     }
+  }
+  @media(max-width: 375px){
     .recommendation ul{
       max-width: 375px;
       justify-content: center;
@@ -474,8 +484,12 @@
   .mb-8{
     margin-bottom: 8px;
   }
+  .mt-8{
+    margin-top: 8px;
+  }
   
   form p,
+  form label,
   form input,
   form textarea,
   form button,
@@ -483,7 +497,11 @@
     font-size: 16px;
     line-height: 1.5;
   }
-  
+  label{
+    cursor: pointer;
+    display: block;
+  }
+
   form input,
   form textarea{
     width: 100%;
@@ -560,7 +578,11 @@
       border-color: #AA0601;
       color: white;
   }  
-  
+  @media(max-width: 648px){
+    .contact-us h2{
+      font-size: 24px;
+    }
+  }
   @media(max-width: 768px){
     .contact-us h2{
       margin-bottom: 24px;
@@ -620,6 +642,11 @@
     line-height: 1.5;
   /*   width: 35.8%; */
   }
+  .footer-nav a{
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
   .mr-36{
     margin-right: 36px;
   }
@@ -661,6 +688,12 @@
     padding-top:9px;
     vertical-align: middle;
     text-align: center;
+  }
+ 
+  a:hover,
+  li>a:hover,
+  a>span:hover{
+    color:#650300;
   }
   
   
@@ -714,7 +747,8 @@
       flex-wrap: wrap;
     }
   }
-  @media(max-width: 375px){
+
+  @media(max-width: 648px){
     .footer-nav{
       display: none;
       height: 0px;

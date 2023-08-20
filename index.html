@@ -27,7 +27,7 @@
 </div>
 
 <div class="header-container header-container-sm">
-  <div class="header pt-296 pb-296 pt-144-sm pb-144-sm">
+  <div class="header pt-144-sm pb-144-sm">
     <div class="header-content pr-md-37 pr-sm-14">
       <p class="header-p header-p-sm">Promise-Desert 2020 早春系列</p>
       <h2 class="header-h2 mb-4 header-h2-sm">看得清，才能看得遠</h2>
@@ -152,14 +152,14 @@
     <h2>聯絡我們</h2>
     <p class="contact-us-text">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
     <form>
-      <p class="mb-8">姓名</p>
-      <input class="mb-16 name" type="text" id="user-name" name="user-name" placeholder="陳小明">
-      <p class="mb-8">連絡電話</p>
-      <input class="mb-16 phone" type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required maxlength="12" id="user-phone" name="user-phone" placeholder="0912-345-678">
-      <p class="mb-8">電子郵件</p>
-      <input class="mb-16  email" type="email" pattern=".+@email\.com" size="30" required id="user-email" name="user-email" placeholder="example@email.com">
-      <p class="mb-8">意見反應</p>
-      <textarea class=" suggest mb-16" name="suggest" id="suggest" rows="5" maxlength="345" placeholder="請輸入您的意見"></textarea>
+      <label for="user-name">姓名</p>
+      <input class="mt-8 mb-16 name" type="text" id="user-name" name="user-name" placeholder="陳小明">
+      <label for="user-phone">連絡電話</p>
+      <input class="mt-8 mb-16 phone" type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required maxlength="12" id="user-phone" name="user-phone" placeholder="0912-345-678">
+      <label for="user-email">電子郵件</p>
+      <input class="mt-8 mb-16  email" type="email" pattern=".+@email\.com" size="30" required id="user-email" name="user-email" placeholder="example@email.com">
+      <label for="suggest">意見反應</p>
+      <textarea class="suggest mt-8 mb-16" name="suggest" id="suggest" rows="5" maxlength="345" placeholder="請輸入您的意見"></textarea>
       <div>
         <input type="checkbox" name="check" id="check" value="checked">
         <label class="checkbox-label" for="check">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
@@ -188,8 +188,8 @@
       </div>
       <div class="footer-info pt-24 pb-32 pb-sm-24">
         <ul>
-          <li class="mb-8"><span class="material-symbols-outlined md-36 mr-16 phone-number md-18 mr-sm-11">phone</span><span class="info-text">0800-000-00</span></li>
-          <li><span class="material-symbols-outlined md-40 mr-16 mail md-18 mr-sm-11">mail</span><span class="info-text">glasses@business.co</span></li>
+          <li class="mb-8"><a href="tel:0800-000-00"><span class="material-symbols-outlined md-36 mr-16 phone-number md-18 mr-sm-11">phone</span><span class="info-text">0800-000-00</span></a></li>
+          <li><a href="mailto:glasses@business.co"><span class="material-symbols-outlined md-40 mr-16 mail md-18 mr-sm-11">mail</span><span class="info-text">glasses@business.co</span></a></li>
         </ul>
       </div>
     </div>
@@ -199,7 +199,7 @@
         <li>
           <ul class="d-flex flex-column-sm flex-wrap">
             <li class="mr-48 mr-sm-0"><a href="#">隱私權政策</a></li>
-            <li class=""><a href="#">服務條款</a></li>
+            <li><a href="#">服務條款</a></li>
           </ul>
     </div>
   </div>
